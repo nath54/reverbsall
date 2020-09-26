@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Quiz verbes allemand</title>
+    </head>
+    <body onload="create_q();">
+        <h1 id="francais"></h1>
+        <table>
+            <tr>
+                <td>Infinitif</td>
+                <td>Présent</td>
+                <td>Prétérit</td>
+                <td>Parfait</td>
+            </tr>
+            <tr>
+                <td id="tinf"> <input id="infinitif"/> </td>
+                <td id="tpres"> <input id="present"/> </td>
+                <td id="tpret"> <input id="preterit"/> </td>
+                <td id="tpar"> <input id="parfait" onkeypress="checkEnter(event);"/> </td>
+            </tr>
+        </table>
+        <button onclick="repondre();" id="bt">vérifier</button>
+    </body>
+    <script src="quiz.js"></script>
+    <script src="voc.js"></script>
+</html>
